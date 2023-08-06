@@ -8,22 +8,14 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <div>
+    <div id="divMessage">
       <button onclick="hola()">Saludar</button>
     </div>
     <script>
       function hola() {
         alert("Hola!");
+        alert.stopPropagation();
       }
-      const divmessage = document.getElementsByTagName("div")[0];
-
-      function saludoDiv() {
-        alert("qwer");
-      }
-
-      divmessage.addEventListener("click", () => {
-        saludoDiv();
-      });
     </script>
   </body>
 </html>
