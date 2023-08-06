@@ -1,10 +1,9 @@
 const divmessage = document.getElementsById("divMessage");
 
 function saludoDiv() {
-  alert("qwer");
+  alert("Hola! Soy el div");
 }
 
 divmessage.addEventListener("click", () => {
   saludoDiv();
-  saludoDiv.stopPropagation();
 });
