@@ -4,17 +4,29 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Taller Eventos | Mauro Cravi</title>
-    <script src="eventos.js"></script>
+    <script src="/eventos.js"></script>
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
     <div id="divMessage">
-      <button onclick="hola()">Saludar</button>
+      <button>Saludar</button>
     </div>
-    <script>
-      function hola() {
-        alert("Hola!");
-      }
-    </script>
   </body>
+  <script>
+    const divmessage = document.getElementById("divMessage");
+    function saludoDiv() {
+      alert("Hola! Soy el div");
+    }
+    divmessage.addEventListener("click", () => {
+      saludoDiv();
+    });
+
+    const buttonMessage = document.querySelector("button");
+    function mensajeButton() {
+      alert("Hola!");
+    }
+    buttonMessage.addEventListener("click", () => {
+      mensajeButton();
+    });
+  </script>
 </html>
