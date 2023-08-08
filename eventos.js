@@ -5,6 +5,7 @@ function mensajeButton() {
   alert("Hola!");
 }
 buttonMessage.addEventListener("click", () => {
+  event.stopPropagation();
   mensajeButton();
 });
 
